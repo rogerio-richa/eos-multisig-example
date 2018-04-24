@@ -84,12 +84,17 @@ cleos push action token issue '[ "proxy", "100.00 GRD", "monies to proxy" ]' -p 
 
 Now you can manipulate the proxy account funds using dual sig:
 
+```
 cleos push action token transfer '["proxy","bob","10.00 GRD", "allowance"]' -p proxy
+```
+Result:
+```
 executed transaction: a0de700320f42fa0c8cba55036c07eaf66c713a381e8dfe57f84c0840fbe3181  336 bytes  209920 cycles
          token <= token::transfer              {"from":"proxy","to":"bob","quantity":"10.00 GRD","memo":"allowance"}
 >> transfer
          proxy <= token::transfer              {"from":"proxy","to":"bob","quantity":"10.00 GRD","memo":"allowance"}
            bob <= token::transfer              {"from":"proxy","to":"bob","quantity":"10.00 GRD","memo":"allowance"}
+```
 
 * note: transferring "10 GRD" instead of "10.00 GRD" will throw an error
 
