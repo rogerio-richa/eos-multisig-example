@@ -37,6 +37,7 @@ Let's then issue some of that currency to a user called alice. This user alice d
 cleos push action token issue '[ "alice", "100.00 GRD", "monies to alice" ]' -p token 
 ```
 
+Result:
 ```
 executed transaction: c2579414458e16c645cc4d2cf1f771adecafaebe875285f5104ceb510a646cdc  264 bytes  126976 cycles
          token <= token::issue                 {"to":"alice","quantity":"100.00 GRD","memo":"monies to alice"}
