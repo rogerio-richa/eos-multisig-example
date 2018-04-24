@@ -51,8 +51,9 @@ executed transaction: c2579414458e16c645cc4d2cf1f771adecafaebe875285f5104ceb510a
 
 A proxy user shall be created for each user in the anonymous network. 
 
+```
 cleos set account permission proxy active '{"threshold": 2,"keys": [{"key": "EOS7A76ntNgFU2yhDUvv9isEqBptr6yaDbqxdwuhfCTtccqvB6ZZd","weight": 1}, {"key": "EOS5T3Tg1YJMX5funSuqJqfcZJZxHPXtLrsVuMpkydbYUiTFSWSAH","weight": 1}] }' owner -p proxy
-
+```
 * I still need to figure out a way to change the OWNER keys. I could not figure that one out yet
 
 Here is what the account looks like now:
